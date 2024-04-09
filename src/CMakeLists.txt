@@ -1,5 +1,5 @@
 # find Clang
-find_package(Clang REQUIRED)
+find_package(Clang 17.0.0...<19.0.0 REQUIRED)
 include_directories(${CLANG_INCLUDE_DIRS})
 add_definitions(${CLANG_DEFINITIONS})
 message(STATUS "Found Clang")
